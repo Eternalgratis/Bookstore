@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from 'react-router-dom';
+import Navbar from "./Components/Navbar/Navbar";
+import Category from "./Components/Categories";
+import Bookss from "./Components/Book/Books";
+
+const bookLi = [
+  {
+    id: '1',
+    title: 'Things fall apart',
+    author: 'Chinue Achebe',
+  },
+  {
+    id: '2',
+    title: 'Things fall apart',
+    author: 'Chinue Achebe',
+  },
+  {
+    id: '3',
+    title: 'Things fall apart',
+    author: 'Chinua Achebe',
+  }
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Bookss bookItem={bookLi} />} />
+        <Route path="/categories" element={<Category />} />
+      </Routes>
     </div>
-  );
-}
+  )
+};
 
 export default App;
