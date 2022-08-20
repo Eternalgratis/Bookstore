@@ -38,7 +38,7 @@ Step 2: Copy All Project files and run using VSCODE. HTML can be viewed in brows
 
 - GitHub: [@eternalgratis](https://github.com/Eternalgratis)
 
-- LinkedIn: [@eternalgratis](https://st1.zoom.us/web_client/4qu8baa/html/externalLinkPage.html?ref=https://www.linkedin.com/in/titilope-apuabi-69a98719b//)
+- LinkedIn: [@eternalgratis](https://www.linkedin.com/in/titilope-apuabi-69a98719b/)
 
 
 ## 🤝 Contributing
