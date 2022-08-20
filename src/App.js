@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from "./Components/Navbar/Navbar";
-import Category from "./Components/Categories";
-import Bookss from "./Components/Book/Books";
+import Navbar from './Components/Navbar/Navbar';
+import Category from './Components/Categories';
+import Bookss from './Components/Book/Books';
 
 const bookLi = [
   {
@@ -19,11 +19,11 @@ const bookLi = [
     id: '3',
     title: 'Things fall apart',
     author: 'Chinua Achebe',
-  }
-]
+  },
+];
 
 function App() {
-  return(
+  return (
     <div>
       <Navbar />
       <Routes>
@@ -31,7 +31,7 @@ function App() {
         <Route path="/categories" element={<Category />} />
       </Routes>
     </div>
-  )
-};
+  );
+}
 
 export default App;
