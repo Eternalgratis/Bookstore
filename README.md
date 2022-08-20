@@ -1,4 +1,4 @@
-# Bookstore
+# Math-magician
 > This is a project built with react that displays list of books where you can add and remove a selected book
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
