@@ -1,65 +1,62 @@
-# React and Redux
+# Math-magician
+> This is a project built with react that displays list of books where you can add and remove a selected book
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Set-up GitHub Actions
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+## Getting Started
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+step 1: Clone this repo locally using git in the command line and the following command
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+git clone https://github.com/Eternalgratis/Bookstore
 
-Please do the following **steps in this order**:
+Alternatively, you can just download the complete zip file and extract the folder in your directory
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+Step 2: Copy All Project files and run using VSCODE. HTML can be viewed in browser.
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+### Prerequisites
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+- Any html and css code editor like Vscode or Vim.
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+## Built With
 
-## Set-up linters in your local env
+- JSX
+- CSS (Cascading Style Sheets)
+- Javascript
+- Webpack
+- React
+- Linters
 
-### ESLint
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint .` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+## Live Demo
 
-### Stylelint
+[Live  Demo Link](#)
 
-1. Run
+## Authors
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+👤 **eternalgratis**
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+- GitHub: [@eternalgratis](https://github.com/Eternalgratis)
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+- LinkedIn: [@eternalgratis](https://st1.zoom.us/web_client/4qu8baa/html/externalLinkPage.html?ref=https://www.linkedin.com/in/titilope-apuabi-69a98719b//)
 
-## Test/Deployment Actions
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+## 🤝 Contributing
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Miroverse Inc.
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
