@@ -1,7 +1,23 @@
 const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
 
-const initialState = [];
+const initialState = [
+  {
+    id: 1,
+    title: 'Things fall apart',
+    author: 'Chinua Achebe',
+  },
+  {
+    id: 2,
+    title: 'An image of Africa',
+    author: 'Chinua Achebe',
+  },
+  {
+    id: 3,
+    title: 'Arrow of God',
+    author: 'Chinua Achebe',
+  },
+];
 
 // Reducer
 const booksReducer = (state = initialState, action) => {
