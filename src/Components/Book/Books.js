@@ -8,7 +8,6 @@ import './Books.css';
 
 const Bookss = ({ item_id, title, author }) => {
   const books = useSelector((state) => state.books);
-  // console.log(books);
   const dispatch = useDispatch();
 
   useEffect(() => {

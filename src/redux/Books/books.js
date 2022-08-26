@@ -26,6 +26,7 @@ export const fetchThunks = () => async (dispatch) => {
 
 // add new book
 export const addNewBook = (book) => async (dispatch) => {
+  createAsyncThunk;
     await fetch( url, {
       method: 'POST',
       headers: {
@@ -35,21 +36,6 @@ export const addNewBook = (book) => async (dispatch) => {
     }).then(() => dispatch(fetchThunks()));
 }
 
-// export const addNewBook =  createAsyncThunk(
-//   ADD,
-//   async (book) => {
-//   await fetch(url, {
-//     method: 'POST',
-//     body: JSON.stringify(book),
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//   }); return book;
-// });
-
-
-// Delete book
-//  const deleteVar = `${url}/item_id`;
 export const deleteBooks = (item_id) => async (dispatch) => {
   await fetch(`${url}/${item_id}`, {
     method: 'DELETE',
