@@ -1,6 +1,7 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../../redux/Books/books';
+import { addNewBook } from '../../redux/Books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -16,12 +17,13 @@ const AddBook = () => {
     e.preventDefault();
 
     if (form.title.trim() && form.author.trim()) {
-      const data = {
-        id: Date.now(),
+      const book = {
+        item_id: Date.now(),
         title: form.title,
         author: form.author,
+        category: "categories", 
       };
-      dispatch(addBook(data));
+      dispatch(addNewBook(book));
       setForm({ title: '', author: '' });
     }
   };
