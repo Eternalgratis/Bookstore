@@ -2,11 +2,12 @@
 import PropTypes from 'prop-types';
 
 const DisplayBooks = (props) => {
-  const { title, author, id } = props;
+  const { category, title, author, id } = props;
   return (
     <li key={id}>
-      <h1>{title}</h1>
-      <p>{author}</p>
+      <p className='text'>{category}</p>
+      <h1 className='head'>{title}</h1>
+      <p className='para'>{author}</p>
     </li>
   );
 };
