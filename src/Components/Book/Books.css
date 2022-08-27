@@ -12,6 +12,7 @@
   justify-content: space-between;
   box-shadow: 30px 20px 40px rgba(0, 0, 0, 0.3);
   width: 95%;
+
   /* z-index: 1; */
 }
 
@@ -37,7 +38,7 @@
 }
 
 .status-container {
-  display: flex
+  display: flex;
 }
 
 .prog-report {
@@ -54,7 +55,7 @@
 
 .percent {
   font-size: 35px;
-  font-weight: 500
+  font-weight: 500;
 }
 
 .complete {
@@ -84,7 +85,6 @@
 
 .btn-container {
   padding-top: 5px;
-  
 }
 
 .comment-btn {
@@ -116,24 +116,24 @@
 }
 
 form {
-    margin: 40px;
+  margin: 40px;
 }
 
 .title-input {
-    width: 45%;
-    height: 40px
+  width: 45%;
+  height: 40px;
 }
 
 .author-input {
-    width: 25%;
-    height: 40px;
-    margin: 10px;
+  width: 25%;
+  height: 40px;
+  margin: 10px;
 }
 
 .category-input {
-    width: 12%;
-    height: 30px;
-    margin: 5px;
+  width: 12%;
+  height: 30px;
+  margin: 5px;
 }
 
 .submit {
