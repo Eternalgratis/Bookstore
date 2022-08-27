@@ -1,7 +1,7 @@
-/* eslint-disable */
+/* eslint-disble */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import userImage from '../../images/user-icon.png';
+import { IoIosContact } from 'react-icons/io';
 import './Navbar.css';
 
 const Navbar = () => (
@@ -18,7 +18,7 @@ const Navbar = () => (
       </ul>
     </div>
     <div>
-      <img className="user-image" src={userImage} alt="user-img" />
+      <p className="cont-img"><IoIosContact size={40} /></p>
     </div>
   </nav>
 );

@@ -22,10 +22,9 @@
   color: #4395fc;
 }
 
-.user-image {
-  width: 50px;
-  background-color: #4395fc;
-  margin-right: 1em;
+.cont-img {
+  color: #4395fc;
+  margin-right: 35px;
 }
 
 .title-list {

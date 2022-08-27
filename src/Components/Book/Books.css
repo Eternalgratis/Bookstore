@@ -4,11 +4,148 @@
 }
 
 .book-list {
-  border-bottom: 1px solid #e8e8e8;
   margin: 20px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  padding: 10px;
   list-style: none;
+  justify-content: space-between;
   box-shadow: 30px 20px 40px rgba(0, 0, 0, 0.3);
   width: 95%;
-  z-index: 1;
+  /* z-index: 1; */
+}
+
+.title-comment {
+  padding: 20px 25px;
+}
+
+.text {
+  font-size: 20px;
+  color: gray;
+}
+
+.head {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  padding-top: 6px;
+}
+
+.para {
+  font-size: 20px;
+  color: rgb(64, 64, 155);
+}
+
+.status-container {
+  display: flex
+}
+
+.prog-report {
+  display: flex;
+  padding: 25px;
+  margin-right: 40px;
+  border-right: 1px solid lightgray;
+}
+
+.status {
+  display: block;
+  padding: 20px;
+}
+
+.percent {
+  font-size: 35px;
+  font-weight: 500
+}
+
+.complete {
+  font-size: 18px;
+}
+
+.chapter-container {
+  padding: 25px;
+}
+
+.chapter {
+  font-size: 15px;
+}
+
+.topic {
+  font-size: 18px;
+}
+
+.prog-btn {
+  border: 1px solid #fff;
+  margin-top: 15px;
+  border-radius: 3px;
+  padding: 8px 20px;
+  background-color: #0280ff;
+  color: #fff;
+}
+
+.btn-container {
+  padding-top: 5px;
+  
+}
+
+.comment-btn {
+  border: none;
+  padding-right: 5px;
+  font-size: 18px;
+  color: rgb(64, 64, 155);
+  background-color: #fff;
+}
+
+.remove-btn {
+  margin: 10px;
+  border-bottom: none;
+  border-top: none;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  font-size: 18px;
+  color: rgb(64, 64, 155);
+  padding: 0 5px;
+  background-color: #fff;
+}
+
+.edit-btn {
+  border: none;
+  padding-right: 5px;
+  font-size: 18px;
+  color: rgb(64, 64, 155);
+  background-color: #fff;
+}
+
+form {
+    margin: 40px;
+}
+
+.title-input {
+    width: 45%;
+    height: 40px
+}
+
+.author-input {
+    width: 25%;
+    height: 40px;
+    margin: 10px;
+}
+
+.category-input {
+    width: 12%;
+    height: 30px;
+    margin: 5px;
+}
+
+.submit {
+  border: 1px solid #fff;
+  margin-top: 15px;
+  border-radius: 3px;
+  padding: 8px 20px;
+  background-color: #0280ff;
+  color: #fff;
+}
+
+.input-container h2 {
+  margin-left: 25px;
   padding: 5px;
 }

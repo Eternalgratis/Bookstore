@@ -1,11 +1,10 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addNewBook } from '../../redux/Books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
-  const [form, setForm] = useState({ title: '', author: '' });
+  const [form, setForm] = useState({ category: '', title: '', author: '' });
   const handleChange = (e) => {
     e.preventDefault();
     setForm({
@@ -16,36 +15,52 @@ const AddBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (form.title.trim() && form.author.trim()) {
+    if (form.category.trim() && form.title.trim() && form.author.trim()) {
       const book = {
         item_id: Date.now(),
+        category: form.category,
         title: form.title,
         author: form.author,
-        category: "categories", 
       };
       dispatch(addNewBook(book));
-      setForm({ title: '', author: '' });
+      setForm({ category: '', title: '', author: '' });
     }
   };
   return (
-    <div>
+    <div className="input-container">
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
         <input
           name="title"
           type="text"
           placeholder="Book title"
+          className="title-input"
           value={form.title}
           onChange={handleChange}
         />
         <input
           name="author"
           type="text"
-          placeholder="Category"
+          placeholder="Author"
+          className="author-input"
           value={form.author}
           onChange={handleChange}
         />
-        <button type="submit">
+        <select
+          className="category-input"
+          name="category"
+          type="text"
+          value={form.category}
+          onChange={handleChange}
+        >
+          <option value="Choose">Choose Category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Drama">Drama</option>
+          <option value="Action">Action</option>
+          <option value="Romance">Romance</option>
+          <option value="Kids">Kids</option>
+        </select>
+        <button type="submit" className="submit">
           ADD BOOK
         </button>
       </form>
