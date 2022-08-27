@@ -57,15 +57,7 @@ const Bookss = ({ item_id, category, title, author }) => {
           </div>
         ))}
       </ul>
-      {/* <div>
-        {title}
-      </div>
-      <div>
-        {author}
-      </div>
-      <div>
-        {item_id}
-      </div> */}
+      {}
       <AddBook />
     </div>
   );
